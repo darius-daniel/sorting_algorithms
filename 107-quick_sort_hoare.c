@@ -12,7 +12,8 @@
 */
 void quick_sort_hoare(int *array, size_t size)
 {
-	hoare_partition(array, size, 0, size - 1);
+	if (array)
+		hoare_partition(array, size, 0, size - 1);
 }
 
 /**

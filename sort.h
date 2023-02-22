@@ -34,5 +34,7 @@ void quick_sort_hoare(int *array, size_t size);
 void hoare_partition(int *array, size_t size, unsigned int low, unsigned int high);
 
 void merge_sort(int *array, size_t size);
+void shell_sort(int *array, size_t size);
+void heap_sort(int *array, size_t size);
 
 #endif

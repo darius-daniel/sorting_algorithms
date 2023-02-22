@@ -20,6 +20,7 @@ void quick_sort(int *array, size_t size)
  * lomuto - helper for the quick_sort function. Splits the array
  * into subarray calling itself recursively.
  * @array: the array
+ * @size: number of elements in @array
  * @low: index of the first element of the sublist
  * @high:  index of the last element of the sublist
 */

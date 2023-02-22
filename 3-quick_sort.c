@@ -22,15 +22,16 @@ void quick_sort(int *array, size_t size)
  */
 void lomuto(int *array, size_t size, int low, int high)
 {
-	int p, i, j;
+	int pivot_idx, i, j, pivot;
 
 	if (low < high)
 	{
-		p = high;
+		pivot_idx = high;
+		pivot = array[pivot_idx];
 		j = low;
 		for (i = low; i < high; i++)
 		{
-			if (array[i] < array[p])
+			if (array[i] < pivot)
 			{
 				if (i != j)
 				{
@@ -40,9 +41,9 @@ void lomuto(int *array, size_t size, int low, int high)
 				j++;
 			}
 		}
-		if (j != p && array[j] != array[p])
+		if (j != pivot_idx && array[j] != pivot)
 		{
-			swap(array, j, p);
+			swap(array, j, pivot_idx);
 			print_array(array, size);
 		}
 		lomuto(array, size, low, j - 1);

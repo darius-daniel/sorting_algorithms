@@ -16,7 +16,7 @@ void quick_sort(int *array, size_t size)
 /**
  * lomuto - auxiliary function for the
  * quick_sort function
- * @a: input arrray
+ * @array: input arrray
  * @low: index for the first element
  * @high: index for the last element
  * @size: size of the array
